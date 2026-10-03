@@ -1,0 +1,992 @@
+{
+  "source_url": "https://raw.githubusercontent.com/chl8856/Dynamic-DeepHit/b2e208f65233405079a462b703a94556ad30d1f4/utils_eval.py",
+  "source_sha256": "5bdef36df094af8eae29c4c7801933d0e559029efaefb9edae5927c2e13db010",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.3.5",
+  "scope": "uncensored one-event Brier score with flat predictions/events and flat-or-single-column times; no censoring/IPCW or paper-table repair",
+  "tolerance": 1e-12,
+  "summary": {
+    "valid_conditions": 24,
+    "original_oracle_mismatches": 16,
+    "repaired_oracle_mismatches": 0,
+    "constant_positive_controls": 8,
+    "unsupported_inputs": 2,
+    "unsupported_inputs_rejected": 2
+  },
+  "conditions": [
+    {
+      "n": 2,
+      "times": [
+        1.0,
+        3.0
+      ],
+      "events": [
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.5,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.5,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 2,
+      "times": [
+        1.0,
+        3.0
+      ],
+      "events": [
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.5,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.5,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 2,
+      "times": [
+        1.0,
+        3.0
+      ],
+      "events": [
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        0.0
+      ],
+      "oracle": 0.3125,
+      "original": 0.3125,
+      "repaired": 0.3125,
+      "analytic_broadcast": 0.3125,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 2,
+      "times": [
+        1.0,
+        3.0
+      ],
+      "events": [
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 2,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.5,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.5,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 2,
+      "times": [
+        1.0,
+        3.0
+      ],
+      "events": [
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 2,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.5,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.5,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 2,
+      "times": [
+        1.0,
+        3.0
+      ],
+      "events": [
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 2,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        0.0
+      ],
+      "oracle": 0.3125,
+      "original": 0.3125,
+      "repaired": 0.3125,
+      "analytic_broadcast": 0.3125,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 3,
+      "times": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "events": [
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.4444444444444444,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.4444444444444444,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 3,
+      "times": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "events": [
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.5555555555555556,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.5555555555555556,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 3,
+      "times": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "events": [
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 0.22916666666666666,
+      "original": 0.22916666666666666,
+      "repaired": 0.22916666666666666,
+      "analytic_broadcast": 0.22916666666666666,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 3,
+      "times": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "events": [
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 4,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.4444444444444444,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.4444444444444444,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 3,
+      "times": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "events": [
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 4,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.5555555555555556,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.5555555555555556,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 3,
+      "times": [
+        1.0,
+        3.0,
+        5.0
+      ],
+      "events": [
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 4,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 0.3958333333333333,
+      "original": 0.3958333333333333,
+      "repaired": 0.3958333333333333,
+      "analytic_broadcast": 0.3958333333333333,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 5,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.32,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.32,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 5,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.68,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.6799999999999999,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 5,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 0.1625,
+      "original": 0.1625,
+      "repaired": 0.1625,
+      "analytic_broadcast": 0.1625,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 5,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 8,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.32,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.31999999999999984,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 5,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 8,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.68,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.6799999999999999,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 5,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 8,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 0.4625,
+      "original": 0.4625,
+      "repaired": 0.4625,
+      "analytic_broadcast": 0.4625,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 10,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.18,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.18,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 10,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.82,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.82,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 10,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "early",
+      "horizon": 1,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oracle": 0.1125,
+      "original": 0.1125,
+      "repaired": 0.1125,
+      "analytic_broadcast": 0.1125,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 10,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 18,
+      "prediction_mode": "perfect",
+      "predictions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "target": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 0.0,
+      "original": 0.18,
+      "repaired": 0.0,
+      "analytic_broadcast": 0.17999999999999994,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 10,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 18,
+      "prediction_mode": "reversed",
+      "predictions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 1.0,
+      "original": 0.82,
+      "repaired": 1.0,
+      "analytic_broadcast": 0.8200000000000001,
+      "original_matches_oracle": false,
+      "repaired_matches_oracle": true
+    },
+    {
+      "n": 10,
+      "times": [
+        1.0,
+        3.0,
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0
+      ],
+      "events": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "horizon_label": "late",
+      "horizon": 18,
+      "prediction_mode": "constant",
+      "predictions": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "target": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "oracle": 0.5125,
+      "original": 0.5125,
+      "repaired": 0.5125,
+      "analytic_broadcast": 0.5125,
+      "original_matches_oracle": true,
+      "repaired_matches_oracle": true
+    }
+  ],
+  "unsupported_inputs": [
+    {
+      "case": "multi_column_times",
+      "rejected": true,
+      "error": "times must be a flat vector or a single-column array"
+    },
+    {
+      "case": "mismatched_observation_count",
+      "rejected": true,
+      "error": "observation counts must agree"
+    }
+  ],
+  "analytic_relation": "For all events=1, broadcast Brier=mean(p^2)-2*mean(p)*mean(y)+mean(y); paired Brier=mean(p^2)-2*mean(p*y)+mean(y). Difference is 2*Cov_population(p,y)."
+}

@@ -1,0 +1,26 @@
+{
+  "created": "2026-10-03",
+  "entries_sha256": {
+    "README.md": "6f087d80cd45254ff66949bc1357a30e0e0cb339f0b60164c1a3617869e57833",
+    "pinned_functions.py": "5ff35e2bb4d5f982bc057963d9729647d30fbe39d2af8d4d931c977ac10cf867",
+    "Dynamic_DeepHit_shape_reproducer.py": "8df8c5fe97097095d5cc17f5f921edf9d18c6ce993d35dbc407c9ff54f03b18c",
+    "ArxivRoll_rank_reproducer.py": "b3ee44d12dbb682f04ad3590d0fb3e8a902a8e7bfd2da358c73cc5d845adb97c",
+    "DBAE_SSIM_axes_reproducer.py": "13606ea7602f0f7a19f57975e0d6fd4a70a0de2bf84f5a6cc1d4daf69078ab45",
+    "ESC_independent_bootstrap_reproducer.py": "d4352e1540ca51042d49d9d2089bcbc34a1940acd6e47bc0d5d4bf16593b408c",
+    "Dynamic_DeepHit_shape_output.json": "f6f50d64564e9c76512bfae775ac6438a8c9f1d31b3d2af69df26ec0ddc9b163",
+    "DBAE_SSIM_axes_output.json": "11bcdf51aba890e30955282767b1566748d2c2642f945ba9f4f582713c5caba4",
+    "ArxivRoll_rank_output.json": "8077a679a14ccd9e9a0b98c732278c538b77afee4b398302fd76c06f74428c7e",
+    "ESC_independent_bootstrap_output.json": "6c341261e24a4cac845f58e1a17bed16ad9821735cfc798eb01faf52cfd53822",
+    "archive_manifest.json": "47d0856f4e5ccfed40f4291bf22ff4450beed319001be60c449cc3f01c6d4da6",
+    "DBAE_PyTorch_crosscheck.py": "2ab893dff7ed3a906bd0712b5f565b13e4ceccf1bd7eb7568cc1b893121b376f",
+    "DBAE_PyTorch_crosscheck.json": "81ea50a6c335c696119d7ff0fc37546131a803c28314fa8d2e070c0bc43e9d2c",
+    "LICENSE": "0da651d0efcca36f49c04e8dfcb7933a414230e3cc354411cb381651cc155ff8",
+    "repair_comparisons/arxivroll_permutation_repair_compare.py": "526fb8ced5dbf4a2889420b4cac46d1ac91a25c54b318dfadaad6295453d33ca",
+    "repair_comparisons/arxivroll_permutation_repair_result.json": "e3684113b2115d8bf60707a67441e979da4beced3bef7d73ee6d7e3b88ccd210",
+    "repair_comparisons/deephit_uncensored_shape_controls.py": "bd51a700a80f2b1d8d566f59423fac1c268b62113fc27b2d376167157c6808af",
+    "repair_comparisons/deephit_uncensored_shape_controls_result.json": "1c835637bacb6ae03c41f3ad1407428cc0b97a1e9ccc4e43490ddf8b3a4758e5",
+    "repair_comparisons/README.md": "908adde8d02d496ef5d09408d2f56afd9edece0dd198b616d26413f52c51b5bd",
+    "repair_comparisons/source_contract_evidence.json": "0d1ada1b1f138fe0b6c47fd4baea7de41dd4ff7671da3dd133cbca790ffc0f72"
+  },
+  "scope": "Original four-case fixture archive plus three-case repair and caller evidence. Resampling remains a separate synthetic illustration."
+}

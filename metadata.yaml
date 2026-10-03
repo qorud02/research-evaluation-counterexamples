@@ -49,7 +49,7 @@
       "doi": null
     }
   ],
-  "abstract": "Small counterexamples can expose an evaluation error before a complete computational reproduction. This letter presents four selected examples involving survival metrics, image similarity, model ranking, and two-sample resampling. Synthetic inputs isolate changes in observation identity, axis meaning, model alignment, and sampling independence. The accompanying scripts record source versions, inputs, and numerical outputs so that each local claim can be checked separately from the original study.",
+  "abstract": "Research evaluators can return plausible numbers while losing the relationship between an array position and the entity it represents. This letter documents three implementation counterexamples in fixed versions of public research code. The cases concern patient-level survival targets, channel layout in structural similarity, and model-aligned ranks. Source inspection connects each fixture to the released caller rather than assuming an unsupported input contract. Executions of pinned functions and a PyTorch cross-check support the numerical findings. Correcting the model-rank conversion restores identity-aligned results for all six permutations of a three-model fixture. Survival comparisons check normalized inputs against a direct mean-squared-error oracle, including controls for input shapes and observation counts. These results provide local diagnoses and executable repair checks; measuring their effect on original empirical tables requires the original evaluation material.",
   "bibliography": "",
   "type": "Letter",
   "domain": "Computational Science",

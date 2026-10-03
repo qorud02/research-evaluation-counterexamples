@@ -1,0 +1,122 @@
+{
+  "created": "2026-10-03",
+  "scope": "bounded source-to-loader/caller evidence for three cases; original full source is not redistributed",
+  "records": [
+    {
+      "source_url": "https://raw.githubusercontent.com/chl8856/Dynamic-DeepHit/b2e208f65233405079a462b703a94556ad30d1f4/import_data.py",
+      "commit": "b2e208f65233405079a462b703a94556ad30d1f4",
+      "source_sha256": "3b5cc3c6cecd8fbd37fc6c349b3e601f3feefd9fab4b99dc92f4bc8a7a896f07",
+      "local_artifact_sha256": "3b5cc3c6cecd8fbd37fc6c349b3e601f3feefd9fab4b99dc92f4bc8a7a896f07",
+      "hash_basis": "stored fixed-source artifact bytes",
+      "claim_supported": "The loader returns column-shaped time and event-label arrays.",
+      "LF_normalized_local_sha256": "3b5cc3c6cecd8fbd37fc6c349b3e601f3feefd9fab4b99dc92f4bc8a7a896f07",
+      "source_locations": [
+        {
+          "start_line": 138,
+          "end_line": 140
+        },
+        {
+          "start_line": 152,
+          "end_line": 153
+        }
+      ]
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/chl8856/Dynamic-DeepHit/b2e208f65233405079a462b703a94556ad30d1f4/main.py",
+      "commit": "b2e208f65233405079a462b703a94556ad30d1f4",
+      "source_sha256": "b6fb696e554339ff82c76886ab7d9384054b4d88347b58d0a0043d4567fcf160",
+      "local_artifact_sha256": "b6fb696e554339ff82c76886ab7d9384054b4d88347b58d0a0043d4567fcf160",
+      "hash_basis": "stored fixed-source artifact bytes",
+      "claim_supported": "The caller passes column time unchanged and a flat event-specific indicator to the evaluators.",
+      "LF_normalized_local_sha256": "b6fb696e554339ff82c76886ab7d9384054b4d88347b58d0a0043d4567fcf160",
+      "source_locations": [
+        {
+          "start_line": 291,
+          "end_line": 294
+        }
+      ]
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/chl8856/Dynamic-DeepHit/b2e208f65233405079a462b703a94556ad30d1f4/utils_eval.py",
+      "commit": "b2e208f65233405079a462b703a94556ad30d1f4",
+      "source_sha256": "5bdef36df094af8eae29c4c7801933d0e559029efaefb9edae5927c2e13db010",
+      "local_artifact_sha256": "5bdef36df094af8eae29c4c7801933d0e559029efaefb9edae5927c2e13db010",
+      "hash_basis": "stored fixed-source artifact bytes",
+      "claim_supported": "A time indicator multiplied by a flat event vector can broadcast before the Brier mean.",
+      "LF_normalized_local_sha256": "5bdef36df094af8eae29c4c7801933d0e559029efaefb9edae5927c2e13db010",
+      "source_locations": [
+        {
+          "start_line": 51,
+          "end_line": 55
+        }
+      ]
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/aailab-kaist/DBAE/533f5648a3a1ca419c402c656e305536267c14c8/README.md",
+      "commit": "533f5648a3a1ca419c402c656e305536267c14c8",
+      "source_sha256": "b50898b68a3ca230a17fcae8b3ea1f5546616bde809029f216f9eb32eb364a38",
+      "local_artifact_sha256": "b50898b68a3ca230a17fcae8b3ea1f5546616bde809029f216f9eb32eb364a38",
+      "hash_basis": "stored fixed-source artifact bytes",
+      "claim_supported": "The official README identifies this evaluation file as the reconstruction/Table 2 reproduction route.",
+      "LF_normalized_local_sha256": "b50898b68a3ca230a17fcae8b3ea1f5546616bde809029f216f9eb32eb364a38",
+      "source_locations": [
+        {
+          "start_line": 107,
+          "end_line": 110
+        },
+        {
+          "start_line": 116,
+          "end_line": 116
+        }
+      ]
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/aailab-kaist/DBAE/533f5648a3a1ca419c402c656e305536267c14c8/eval_reconstruction.py",
+      "commit": "533f5648a3a1ca419c402c656e305536267c14c8",
+      "source_sha256": "7e6504144916f3db6d03a23336125ab7eb6b96bd60cba8228c32fa6eea64885b",
+      "local_artifact_sha256": "7e6504144916f3db6d03a23336125ab7eb6b96bd60cba8228c32fa6eea64885b",
+      "hash_basis": "raw pinned source recorded in existing source QA",
+      "claim_supported": "SSIM receives stored sample arrays directly, while LPIPS explicitly converts NHWC to NCHW.",
+      "LF_normalized_local_sha256": "7e6504144916f3db6d03a23336125ab7eb6b96bd60cba8228c32fa6eea64885b",
+      "source_locations": [
+        {
+          "start_line": 35,
+          "end_line": 37
+        },
+        {
+          "start_line": 45,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/liangzid/ArxivRoll/709b0c5738b1710a4ac6988d70b32ffb1d21458b/rs.py",
+      "commit": "709b0c5738b1710a4ac6988d70b32ffb1d21458b",
+      "source_sha256": "77dcd6558602b24b51ebc035c936be6c09a7b2d0b77527700149f3fcef021237",
+      "local_artifact_sha256": "62a4a75ff3e9f09f89abb7e6310eb04111972bbce4268672ae675006888d3770",
+      "hash_basis": "current retrieval of fixed raw source; snippets checked on these exact bytes",
+      "claim_supported": "Sorted model indices are consumed positionally, and the caller associates result i with model i.",
+      "LF_normalized_local_sha256": "77dcd6558602b24b51ebc035c936be6c09a7b2d0b77527700149f3fcef021237",
+      "raw_remote_matches_LF_normalized_local": true,
+      "source_locations": [
+        {
+          "start_line": 50,
+          "end_line": 52
+        },
+        {
+          "start_line": 103,
+          "end_line": 108
+        },
+        {
+          "start_line": 383,
+          "end_line": 385
+        }
+      ]
+    }
+  ],
+  "interpretation_limits": [
+    "DBAE NHWC contract is supported by the explicit LPIPS permutation and published evaluator; sample generation and original reconstruction files are not executed here.",
+    "ArxivRoll local whole-file hash differs from the raw fixed source only because of CRLF versus LF line endings. A current retrieval verified that raw source bytes equal LF-normalized local bytes. The recorded snippets were checked on the exact raw source.",
+    "Dynamic-DeepHit checks below cover uncensored, one-event Brier evaluation only; they do not repair censoring/IPCW or reproduce paper tables."
+  ]
+}

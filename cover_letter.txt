@@ -1,12 +1,12 @@
 Dear Editors,
 
-Please consider “Counterexample Tests for Computational Research Evaluation” as a Letter for ReScience C.
+Please consider this revised version of “Counterexample Tests for Computational Research Evaluation” as part of ReScience C submission #137.
 
-The manuscript presents four reproducible counterexamples in public computational research evaluation code. The examples show how array shapes, image layouts, model ordering, and shared bootstrap indices can change the quantity being evaluated. Their small synthetic inputs make each mechanism independently checkable before attempting a complete experimental reproduction.
+The Letter documents three implementation counterexamples involving patient-level targets, image channel layout, and model-aligned ranks. It now connects the fixtures to the released loaders and callers and supplies repair comparisons with positive controls. The survival comparison covers 24 designed uncensored conditions, and the ranking comparison checks all six permutations of the three-model fixture.
 
-The submission includes the Letter, author metadata, an extended account of the calculations, and executable supplementary material with fixed source versions and recorded outputs. Its claims concern the specified code operations and synthetic comparisons. This makes the manuscript suitable for the journal's Letter category on reproducibility and computational science.
+The supplement includes pinned source records, numerical outputs, executable comparisons, and the extended account. Its separate two-sample resampling illustration reconstructs a simplified estimator and is distinguished from the three implementation cases. The original empirical tables have not been recalculated.
 
-I have reviewed the manuscript and approve this submission. This manuscript has not been submitted to another journal. Please assign an editor with experience in research software verification or computational reproducibility.
+This update belongs to the existing submission. No submission to another journal has been made.
 
 Kind regards,
 Kyunghan Bae

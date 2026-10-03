@@ -1,25 +1,19 @@
 # Counterexample Tests for Computational Research Evaluation
 
-Four synthetic counterexamples test observation identity, image-axis meaning, model alignment, and sampling independence in public computational research evaluation code.
-
-Author: Kyunghan Bae, UNICUP COMPANY, Republic of Korea. Correspondence: ceo@unicupcompany.com.
-
-## Manuscript and submission material
+Three implementation counterexamples examine patient targets, image channel layout and model-aligned ranks. The Letter connects fixtures to released callers and provides repair comparisons with positive controls.
 
 - [Letter PDF](Counterexample_Tests_Letter.pdf)
 - [Letter source](letter.md)
-- [Author metadata](metadata.yaml)
-- [Cover letter](Cover_Letter_ReScience_C.pdf)
-- [Author information](Author_Information.pdf)
-- [Extended report](extended_report.md)
+- [Metadata](metadata.yaml)
 - [Reproducibility archive](reproducibility_archive.zip)
+- [Repair comparisons and caller evidence](supplement/repair_comparisons/README.md)
+- [Extended four-case account](extended_report.md)
+- [Submission and review](https://github.com/ReScience/submissions/issues/137)
 
-## Run the comparisons
+The archive retains the original fixture suite and adds 24 designed uncensored Brier comparisons and all six row permutations of the three-model ranking fixture. The original PyTorch/NumPy SSIM cross-check is included. A separate two-sample resampling illustration reconstructs a simplified synthetic estimator and is distinguished from the three implementation cases.
 
-See [supplement instructions](supplement/README.md). The four principal comparisons use Python and NumPy. An additional original-function comparison uses PyTorch.
+Use Python 3.12 and NumPy 2.3.5. The optional image cross-check uses PyTorch. Pinned-source runners require internet access and verify SHA-256 before extracting functions. Original source files are not redistributed. Expected relations apply to the stated input contracts, including all-event-one survival fixtures and tie-free higher-is-better rankings. Original empirical tables were not recalculated.
 
-All inputs are synthetic. The source-download runners check fixed source hashes before extracting the evaluation functions. The image comparison was cross-checked against the pinned PyTorch functions; the maximum absolute difference was 8.47e-8.
+Original fixture and loader code: MIT. Manuscript and extended report: CC BY 4.0. Retrieved upstream functions remain subject to their original terms. Source versions and hashes are recorded in the archives.
 
-## License
-
-The original Python scripts are licensed under MIT. The manuscript and extended report use CC BY 4.0. Retrieved third-party source files retain their original terms.
+The original submission remains available at commit 85deb605936e7e4c22021db47a7622b99545e8b8. This repository records the revision as a later commit on the same submission.

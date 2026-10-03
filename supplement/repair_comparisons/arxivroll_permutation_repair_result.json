@@ -1,0 +1,189 @@
+{
+  "review_execution": "2026-10-03; fixed locally retained function ASTs, with LF-normalized source bytes verified against the pinned remote source",
+  "executed_local_source_sha256": "62a4a75ff3e9f09f89abb7e6310eb04111972bbce4268672ae675006888d3770",
+  "remote_fixed_source_sha256": "77dcd6558602b24b51ebc035c936be6c09a7b2d0b77527700149f3fcef021237",
+  "source_commit": "709b0c5738b1710a4ac6988d70b32ffb1d21458b",
+  "input_source": "same three-model tie-free synthetic score matrices as submitted case",
+  "released": {
+    "baseline": [
+      0.7,
+      -0.7,
+      0.0
+    ],
+    "permutations": [
+      {
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "restored": [
+          0.7,
+          -0.7,
+          0.0
+        ],
+        "matches_baseline": true
+      },
+      {
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "restored": [
+          0.1333333333333333,
+          0.0,
+          -0.1333333333333333
+        ],
+        "matches_baseline": false
+      },
+      {
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "restored": [
+          -0.7,
+          0.7,
+          0.0
+        ],
+        "matches_baseline": false
+      },
+      {
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "restored": [
+          0.0,
+          0.1333333333333333,
+          -0.1333333333333333
+        ],
+        "matches_baseline": false
+      },
+      {
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "restored": [
+          0.8333333333333333,
+          0.0,
+          -0.8333333333333333
+        ],
+        "matches_baseline": false
+      },
+      {
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "restored": [
+          0.0,
+          0.8333333333333333,
+          -0.8333333333333333
+        ],
+        "matches_baseline": false
+      }
+    ]
+  },
+  "corrected": {
+    "operation": "argsort(argsort(-array, axis=0), axis=0)+1; model-aligned descending rank; ties not addressed",
+    "baseline": [
+      -0.16666666666666669,
+      -0.16666666666666669,
+      0.4
+    ],
+    "permutations": [
+      {
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "restored": [
+          -0.16666666666666669,
+          -0.16666666666666669,
+          0.4
+        ],
+        "matches_baseline": true
+      },
+      {
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "restored": [
+          -0.16666666666666669,
+          -0.16666666666666669,
+          0.4
+        ],
+        "matches_baseline": true
+      },
+      {
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "restored": [
+          -0.16666666666666669,
+          -0.16666666666666669,
+          0.4
+        ],
+        "matches_baseline": true
+      },
+      {
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "restored": [
+          -0.16666666666666669,
+          -0.16666666666666669,
+          0.4
+        ],
+        "matches_baseline": true
+      },
+      {
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "restored": [
+          -0.16666666666666669,
+          -0.16666666666666669,
+          0.4
+        ],
+        "matches_baseline": true
+      },
+      {
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "restored": [
+          -0.16666666666666669,
+          -0.16666666666666669,
+          0.4
+        ],
+        "matches_baseline": true
+      }
+    ]
+  },
+  "generalization": "one fixed tie-free fixture, all six permutations; not validation over other data, ties, or reported paper results",
+  "source_byte_normalization_verification": {
+    "raw_pinned_source_sha256": "77dcd6558602b24b51ebc035c936be6c09a7b2d0b77527700149f3fcef021237",
+    "local_source_sha256": "62a4a75ff3e9f09f89abb7e6310eb04111972bbce4268672ae675006888d3770",
+    "raw_bytes_equal_CRLF_to_LF_normalized_local": true,
+    "performed": "2026-10-03; source read only, no experiment rerun"
+  }
+}
