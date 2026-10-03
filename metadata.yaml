@@ -59,7 +59,23 @@
       "url": null
     }
   ],
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "",
+      "orcid": "",
+      "role": "editor"
+    },
+    {
+      "name": "",
+      "orcid": "",
+      "role": "reviewer"
+    },
+    {
+      "name": "",
+      "orcid": "",
+      "role": "reviewer"
+    }
+  ],
   "dates": [
     {
       "received": null
