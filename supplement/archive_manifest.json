@@ -1,0 +1,152 @@
+{
+  "title": "Counterexample Tests for Computational Research Evaluation",
+  "fixtures": "synthetic",
+  "recorded_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.3.5"
+  },
+  "sources": [
+    {
+      "name": "Dynamic-DeepHit",
+      "url": "https://raw.githubusercontent.com/chl8856/Dynamic-DeepHit/b2e208f65233405079a462b703a94556ad30d1f4/utils_eval.py",
+      "sha256": "5bdef36df094af8eae29c4c7801933d0e559029efaefb9edae5927c2e13db010"
+    },
+    {
+      "name": "DBAE",
+      "url": "https://raw.githubusercontent.com/aailab-kaist/DBAE/533f5648a3a1ca419c402c656e305536267c14c8/eval_reconstruction.py",
+      "sha256": "7e6504144916f3db6d03a23336125ab7eb6b96bd60cba8228c32fa6eea64885b"
+    },
+    {
+      "name": "ArxivRoll",
+      "url": "https://raw.githubusercontent.com/liangzid/ArxivRoll/709b0c5738b1710a4ac6988d70b32ffb1d21458b/rs.py",
+      "sha256": "77dcd6558602b24b51ebc035c936be6c09a7b2d0b77527700149f3fcef021237"
+    },
+    {
+      "name": "Experimental Selection Correction",
+      "url": "https://raw.githubusercontent.com/OpportunityInsights/Experimental-Selection-Correction-Replication-Code/a5fc1167d4c28477920d0d10b9bd35adf9e614a1/code/ESC_main_code_ext.Rmd",
+      "sha256": "3e333bcf533675a933c1f3070cc90e64ed867ad4e50a7098d2cccf5353d9e758"
+    }
+  ],
+  "archive_runner_validation": [
+    {
+      "case": "Dynamic_DeepHit_shape",
+      "archive_runner_matches_reference": true
+    },
+    {
+      "case": "ArxivRoll_rank",
+      "archive_runner_matches_reference": true
+    }
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "6f087d80cd45254ff66949bc1357a30e0e0cb339f0b60164c1a3617869e57833",
+      "bytes": 2997
+    },
+    {
+      "name": "pinned_functions.py",
+      "sha256": "5ff35e2bb4d5f982bc057963d9729647d30fbe39d2af8d4d931c977ac10cf867",
+      "bytes": 1001
+    },
+    {
+      "name": "Dynamic_DeepHit_shape_reproducer.py",
+      "sha256": "8df8c5fe97097095d5cc17f5f921edf9d18c6ce993d35dbc407c9ff54f03b18c",
+      "bytes": 1276
+    },
+    {
+      "name": "ArxivRoll_rank_reproducer.py",
+      "sha256": "b3ee44d12dbb682f04ad3590d0fb3e8a902a8e7bfd2da358c73cc5d845adb97c",
+      "bytes": 1148
+    },
+    {
+      "name": "DBAE_SSIM_axes_reproducer.py",
+      "sha256": "13606ea7602f0f7a19f57975e0d6fd4a70a0de2bf84f5a6cc1d4daf69078ab45",
+      "bytes": 1668
+    },
+    {
+      "name": "ESC_independent_bootstrap_reproducer.py",
+      "sha256": "d4352e1540ca51042d49d9d2089bcbc34a1940acd6e47bc0d5d4bf16593b408c",
+      "bytes": 2111
+    },
+    {
+      "name": "Dynamic_DeepHit_shape_output.json",
+      "sha256": "f6f50d64564e9c76512bfae775ac6438a8c9f1d31b3d2af69df26ec0ddc9b163",
+      "bytes": 399
+    },
+    {
+      "name": "DBAE_SSIM_axes_output.json",
+      "sha256": "11bcdf51aba890e30955282767b1566748d2c2642f945ba9f4f582713c5caba4",
+      "bytes": 252
+    },
+    {
+      "name": "ArxivRoll_rank_output.json",
+      "sha256": "8077a679a14ccd9e9a0b98c732278c538b77afee4b398302fd76c06f74428c7e",
+      "bytes": 467
+    },
+    {
+      "name": "ESC_independent_bootstrap_output.json",
+      "sha256": "6c341261e24a4cac845f58e1a17bed16ad9821735cfc798eb01faf52cfd53822",
+      "bytes": 773
+    },
+    {
+      "name": "DBAE_PyTorch_crosscheck.py",
+      "sha256": "2ab893dff7ed3a906bd0712b5f565b13e4ceccf1bd7eb7568cc1b893121b376f",
+      "bytes": 1604
+    },
+    {
+      "name": "DBAE_PyTorch_crosscheck.json",
+      "sha256": "81ea50a6c335c696119d7ff0fc37546131a803c28314fa8d2e070c0bc43e9d2c",
+      "bytes": 1178
+    },
+    {
+      "name": "LICENSE",
+      "sha256": "0da651d0efcca36f49c04e8dfcb7933a414230e3cc354411cb381651cc155ff8",
+      "bytes": 1069
+    }
+  ],
+  "additional_validation": {
+    "DBAE_original_PyTorch_functions": {
+      "source_url": "https://raw.githubusercontent.com/aailab-kaist/DBAE/533f5648a3a1ca419c402c656e305536267c14c8/eval_reconstruction.py",
+      "source_sha256": "7e6504144916f3db6d03a23336125ab7eb6b96bd60cba8228c32fa6eea64885b",
+      "functions": [
+        "gaussian",
+        "create_window",
+        "_ssim",
+        "ssim"
+      ],
+      "torch": "2.14.1+cpu",
+      "numpy": "2.3.5",
+      "fixture_seed": 20261002,
+      "tolerance": 1e-06,
+      "checks": [
+        {
+          "layout": "NHWC",
+          "torch_float64": 0.8221873597143946,
+          "numpy_float64": 0.8221873479020841,
+          "absolute_difference": 1.1812310463099607e-08
+        },
+        {
+          "layout": "NCHW",
+          "torch_float64": 0.6235562521712654,
+          "numpy_float64": 0.6235561674821463,
+          "absolute_difference": 8.468911916192923e-08
+        },
+        {
+          "layout": "NHWC_HW_transposed",
+          "torch_float64": 0.8246057417695978,
+          "numpy_float64": 0.8246057307192767,
+          "absolute_difference": 1.1050321102601401e-08
+        },
+        {
+          "layout": "NCHW_HW_transposed",
+          "torch_float64": 0.6235562521712655,
+          "numpy_float64": 0.6235561674821463,
+          "absolute_difference": 8.468911927295153e-08
+        }
+      ],
+      "all_within_tolerance": true
+    }
+  },
+  "original_scripts_license": "MIT"
+}

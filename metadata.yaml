@@ -1,0 +1,99 @@
+{
+  "title": "Counterexample Tests for Computational Research Evaluation",
+  "authors": [
+    {
+      "name": "Kyunghan Bae",
+      "orcid": "",
+      "email": "ceo@unicupcompany.com",
+      "affiliations": "1,*"
+    }
+  ],
+  "affiliations": [
+    {
+      "code": 1,
+      "name": "UNICUP COMPANY",
+      "address": "Republic of Korea"
+    }
+  ],
+  "keywords": "computational reproducibility, research software, metamorphic testing, evaluation metrics, Python",
+  "code": [
+    {
+      "url": "https://github.com/qorud02/research-evaluation-counterexamples"
+    },
+    {
+      "doi": null
+    },
+    {
+      "swh": null
+    }
+  ],
+  "data": [
+    {
+      "url": null
+    },
+    {
+      "doi": null
+    }
+  ],
+  "replication": [
+    {
+      "cite": null
+    },
+    {
+      "bib": null
+    },
+    {
+      "url": null
+    },
+    {
+      "doi": null
+    }
+  ],
+  "abstract": "Small counterexamples can expose an evaluation error before a complete computational reproduction. This letter presents four selected examples involving survival metrics, image similarity, model ranking, and two-sample resampling. Synthetic inputs isolate changes in observation identity, axis meaning, model alignment, and sampling independence. The accompanying scripts record source versions, inputs, and numerical outputs so that each local claim can be checked separately from the original study.",
+  "bibliography": "",
+  "type": "Letter",
+  "domain": "Computational Science",
+  "language": "Python",
+  "review": [
+    {
+      "url": null
+    }
+  ],
+  "contributors": [],
+  "dates": [
+    {
+      "received": null
+    },
+    {
+      "accepted": null
+    },
+    {
+      "published": null
+    }
+  ],
+  "article": [
+    {
+      "number": null
+    },
+    {
+      "doi": null
+    },
+    {
+      "url": null
+    }
+  ],
+  "journal": [
+    {
+      "name": "ReScience C"
+    },
+    {
+      "issn": "2430-3658"
+    },
+    {
+      "volume": null
+    },
+    {
+      "issue": null
+    }
+  ]
+}

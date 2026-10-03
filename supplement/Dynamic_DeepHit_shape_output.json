@@ -1,0 +1,25 @@
+{
+  "times": [
+    [
+      1.0
+    ],
+    [
+      3.0
+    ]
+  ],
+  "events": [
+    1,
+    1
+  ],
+  "horizon": 2,
+  "broadcast_target_shape": [
+    2,
+    2
+  ],
+  "brier_column_time_perfect": 0.5,
+  "brier_flat_time_perfect": 0.0,
+  "brier_column_time_reversed": 0.5,
+  "brier_flat_time_reversed": 1.0,
+  "cindex_column_time_perfect": 0.5,
+  "cindex_flat_time_perfect": 1.0
+}

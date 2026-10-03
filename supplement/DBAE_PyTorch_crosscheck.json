@@ -1,0 +1,41 @@
+{
+  "source_url": "https://raw.githubusercontent.com/aailab-kaist/DBAE/533f5648a3a1ca419c402c656e305536267c14c8/eval_reconstruction.py",
+  "source_sha256": "7e6504144916f3db6d03a23336125ab7eb6b96bd60cba8228c32fa6eea64885b",
+  "functions": [
+    "gaussian",
+    "create_window",
+    "_ssim",
+    "ssim"
+  ],
+  "torch": "2.14.1+cpu",
+  "numpy": "2.3.5",
+  "fixture_seed": 20261002,
+  "tolerance": 1e-06,
+  "checks": [
+    {
+      "layout": "NHWC",
+      "torch_float64": 0.8221873597143946,
+      "numpy_float64": 0.8221873479020841,
+      "absolute_difference": 1.1812310463099607e-08
+    },
+    {
+      "layout": "NCHW",
+      "torch_float64": 0.6235562521712654,
+      "numpy_float64": 0.6235561674821463,
+      "absolute_difference": 8.468911916192923e-08
+    },
+    {
+      "layout": "NHWC_HW_transposed",
+      "torch_float64": 0.8246057417695978,
+      "numpy_float64": 0.8246057307192767,
+      "absolute_difference": 1.1050321102601401e-08
+    },
+    {
+      "layout": "NCHW_HW_transposed",
+      "torch_float64": 0.6235562521712655,
+      "numpy_float64": 0.6235561674821463,
+      "absolute_difference": 8.468911927295153e-08
+    }
+  ],
+  "all_within_tolerance": true
+}

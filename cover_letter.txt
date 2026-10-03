@@ -1,0 +1,15 @@
+Dear Editors,
+
+Please consider “Counterexample Tests for Computational Research Evaluation” as a Letter for ReScience C.
+
+The manuscript presents four reproducible counterexamples in public computational research evaluation code. The examples show how array shapes, image layouts, model ordering, and shared bootstrap indices can change the quantity being evaluated. Their small synthetic inputs make each mechanism independently checkable before attempting a complete experimental reproduction.
+
+The submission includes the Letter, author metadata, an extended account of the calculations, and executable supplementary material with fixed source versions and recorded outputs. Its claims concern the specified code operations and synthetic comparisons. This makes the manuscript suitable for the journal's Letter category on reproducibility and computational science.
+
+I have reviewed the manuscript and approve this submission. This manuscript has not been submitted to another journal. Please assign an editor with experience in research software verification or computational reproducibility.
+
+Kind regards,
+Kyunghan Bae
+UNICUP COMPANY
+Republic of Korea
+ceo@unicupcompany.com

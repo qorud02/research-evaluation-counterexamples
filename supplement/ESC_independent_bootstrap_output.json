@@ -1,0 +1,27 @@
+{
+  "seed": 20261002,
+  "n_each": 600,
+  "bootstrap_draws": 3000,
+  "synthetic": true,
+  "downloaded_R_execution": false,
+  "tests": [
+    {
+      "row_order": "original",
+      "point_estimate": 0.34842188382146694,
+      "paired_bootstrap_se": 0.11171462028566888,
+      "independent_bootstrap_se": 0.11178535449971456
+    },
+    {
+      "row_order": "sorted_same_direction",
+      "point_estimate": 0.34842188382146594,
+      "paired_bootstrap_se": 0.15959700583839062,
+      "independent_bootstrap_se": 0.11145168119898748
+    },
+    {
+      "row_order": "sorted_reverse_direction",
+      "point_estimate": 0.3484218838214633,
+      "paired_bootstrap_se": 0.008666245094473918,
+      "independent_bootstrap_se": 0.11372528522867129
+    }
+  ]
+}

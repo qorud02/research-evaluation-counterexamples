@@ -1,0 +1,7 @@
+{
+  "source_shape": "NHWC [1,128,128,3]",
+  "published_call_ssim": 0.8221873479020841,
+  "correct_nchw_ssim": 0.6235561674821463,
+  "published_call_after_HW_transpose": 0.8246057307192767,
+  "correct_nchw_after_HW_transpose": 0.6235561674821463
+}
