@@ -1,0 +1,5 @@
+*.pdf -text
+*.docx -text
+*.zip -text
+supplement/** -text
+*.yaml text eol=lf
